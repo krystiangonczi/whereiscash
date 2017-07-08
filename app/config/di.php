@@ -25,8 +25,8 @@ $di->putParam('hash_cost', 12);
 $di->putParam('db_config', [
     'driver' => 'mysql',
     'db_name' => 'wykop_db',
-    'host' => '127.0.0.1',
-    'port' => 33060,
+    'host' => 'db',
+    'port' => 3306,
     'user' => 'wykop_user',
     'password' => 'wykop_password',
 ]);

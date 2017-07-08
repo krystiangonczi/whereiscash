@@ -12,7 +12,7 @@ docker run \
     -d \
     mariadb:10.1.17
 
-# docker exec -it wykop_db bash
+# docker-composer exec db bash
 # mysql -u wykop_user -pwykop_password wykop_db < /app/schema.sql
 
 cd web/

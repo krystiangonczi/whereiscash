@@ -1,0 +1,42 @@
+version: '2'
+
+services:
+    storage:
+        entrypoint: /bin/true
+        image: nginx:1.13
+        volumes:
+            - ./app/config/nginx/conf.d:/etc/nginx/conf.d
+            - ./app/config/php:/usr/local/etc/php
+            - ./app/config/php-fpm.d:/usr/local/etc/php-fpm.d
+            - php-socket:/var/share/php-socket
+            - .:/app
+    www:
+        image: nginx:1.13
+        links:
+            - php
+        ports:
+            - "32764:80"
+        restart: always
+        volumes_from:
+            - storage
+        entrypoint: /app/nginx-command.sh
+    php:
+        image: php:7.1-fpm
+        restart: always
+        links:
+            - db
+        volumes_from:
+            - storage
+    db:
+        image: mariadb:10.1.17
+        environment:
+            - MYSQL_ROOT_PASSWORD=root123
+            - MYSQL_RANDOM_ROOT_PASSWORD=yes
+            - MYSQL_DATABASE=wykop_db
+            - MYSQL_USER=wykop_user
+            - MYSQL_PASSWORD=wykop_password
+        volumes_from:
+            - storage
+
+volumes:
+    php-socket:
