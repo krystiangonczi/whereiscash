@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metrics generated="2017-03-10T08:51:29" pdepend="2.5.0" ahh="0.46666666666667" andc="0.31428571428571" calls="149" ccn="144" ccn2="150" cloc="752" clsa="3" clsc="30" eloc="1072" fanout="84" leafs="28" lloc="648" loc="2201" maxDIT="2" ncloc="1449" noc="33" nof="0" noi="12" nom="132" nop="12" roots="5">
+  <files>
+    <file name="/home/d0niek/public_html/wykop/src/Controller/Controller.php" loc="104" cloc="44" eloc="44" lloc="29" ncloc="60"/>
+    <file name="/home/d0niek/public_html/wykop/src/Controller/Post/Add.php" loc="80" cloc="19" eloc="51" lloc="32" ncloc="61"/>
+    <file name="/home/d0niek/public_html/wykop/src/Controller/Post/Edit.php" loc="26" cloc="3" eloc="18" lloc="7" ncloc="23"/>
+    <file name="/home/d0niek/public_html/wykop/src/Controller/User/Login.php" loc="101" cloc="24" eloc="61" lloc="41" ncloc="77"/>
+    <file name="/home/d0niek/public_html/wykop/src/Controller/User/Logout.php" loc="22" cloc="3" eloc="14" lloc="7" ncloc="19"/>
+    <file name="/home/d0niek/public_html/wykop/src/Controller/User/Register.php" loc="93" cloc="19" eloc="62" lloc="42" ncloc="74"/>
+    <file name="/home/d0niek/public_html/wykop/src/Core/DB/PdoDB.php" loc="49" cloc="17" eloc="24" lloc="13" ncloc="32"/>
+    <file name="/home/d0niek/public_html/wykop/src/Core/DependenceInjection.php" loc="113" cloc="18" eloc="72" lloc="41" ncloc="95"/>
+    <file name="/home/d0niek/public_html/wykop/src/Core/FrontController.php" loc="71" cloc="25" eloc="35" lloc="21" ncloc="46"/>
+    <file name="/home/d0niek/public_html/wykop/src/Core/Kernel.php" loc="58" cloc="19" eloc="31" lloc="19" ncloc="39"/>
+    <file name="/home/d0niek/public_html/wykop/src/Core/RepositoryManager.php" loc="60" cloc="21" eloc="29" lloc="18" ncloc="39"/>
+    <file name="/home/d0niek/public_html/wykop/src/Core/Router.php" loc="115" cloc="35" eloc="62" lloc="37" ncloc="80"/>
+    <file name="/home/d0niek/public_html/wykop/src/Exception/DependenceInjectionException.php" loc="11" cloc="3" eloc="5" lloc="1" ncloc="8"/>
+    <file name="/home/d0niek/public_html/wykop/src/Exception/FrontControllerException.php" loc="11" cloc="3" eloc="5" lloc="1" ncloc="8"/>
+    <file name="/home/d0niek/public_html/wykop/src/Exception/HtmlResponseException.php" loc="11" cloc="3" eloc="5" lloc="1" ncloc="8"/>
+    <file name="/home/d0niek/public_html/wykop/src/Exception/ModelNotFoundException.php" loc="11" cloc="3" eloc="5" lloc="1" ncloc="8"/>
+    <file name="/home/d0niek/public_html/wykop/src/Exception/RepositoryException.php" loc="11" cloc="3" eloc="5" lloc="1" ncloc="8"/>
+    <file name="/home/d0niek/public_html/wykop/src/Exception/RepositoryManagerException.php" loc="11" cloc="3" eloc="5" lloc="1" ncloc="8"/>
+    <file name="/home/d0niek/public_html/wykop/src/Exception/RouterException.php" loc="11" cloc="3" eloc="5" lloc="1" ncloc="8"/>
+    <file name="/home/d0niek/public_html/wykop/src/Http/Request.php" loc="90" cloc="22" eloc="51" lloc="30" ncloc="68"/>
+    <file name="/home/d0niek/public_html/wykop/src/Http/Response/HtmlResponse.php" loc="124" cloc="46" eloc="57" lloc="38" ncloc="78"/>
+    <file name="/home/d0niek/public_html/wykop/src/Http/Response/RedirectResponse.php" loc="52" cloc="19" eloc="23" lloc="11" ncloc="33"/>
+    <file name="/home/d0niek/public_html/wykop/src/Model/Model.php" loc="37" cloc="16" eloc="14" lloc="6" ncloc="21"/>
+    <file name="/home/d0niek/public_html/wykop/src/Model/ModelFactory.php" loc="19" cloc="8" eloc="7" lloc="4" ncloc="11"/>
+    <file name="/home/d0niek/public_html/wykop/src/Model/PostFactory.php" loc="25" cloc="3" eloc="16" lloc="10" ncloc="22"/>
+    <file name="/home/d0niek/public_html/wykop/src/Model/PostModel.php" loc="131" cloc="55" eloc="57" lloc="31" ncloc="76"/>
+    <file name="/home/d0niek/public_html/wykop/src/Model/Route.php" loc="76" cloc="33" eloc="30" lloc="17" ncloc="43"/>
+    <file name="/home/d0niek/public_html/wykop/src/Model/RouteFactory.php" loc="23" cloc="3" eloc="14" lloc="8" ncloc="20"/>
+    <file name="/home/d0niek/public_html/wykop/src/Model/UserFactory.php" loc="22" cloc="3" eloc="13" lloc="7" ncloc="19"/>
+    <file name="/home/d0niek/public_html/wykop/src/Model/UserModel.php" loc="84" cloc="35" eloc="37" lloc="19" ncloc="49"/>
+    <file name="/home/d0niek/public_html/wykop/src/Repository/PDO/PostRepository.php" loc="81" cloc="11" eloc="57" lloc="34" ncloc="70"/>
+    <file name="/home/d0niek/public_html/wykop/src/Repository/PDO/UserRepository.php" loc="48" cloc="5" eloc="35" lloc="20" ncloc="43"/>
+    <file name="/home/d0niek/public_html/wykop/src/Service/PasswordHash.php" loc="43" cloc="15" eloc="21" lloc="10" ncloc="28"/>
+  </files>
+  <package name="d0niek\Wykop\Controller" noc="1" noi="0" nom="5" nof="0" cr="0.405" rcr="0.15">
+    <class name="Controller" fqname="d0niek\Wykop\Controller\Controller" start="15" end="103" ca="2" cbo="8" ce="8" dit="0" noam="0" nocc="5" noom="0" nom="5" loc="89" cloc="41" eloc="20" lloc="11" ncloc="48" cr="0.7875" rcr="0.15" impl="0" cis="2" csz="10" npm="2" vars="5" varsi="5" varsnp="0" wmc="6" wmci="6" wmcnp="2">
+      <file name="/home/d0niek/public_html/wykop/src/Controller/Controller.php"/>
+      <method name="__construct" start="49" end="60" ccn="1" ccn2="1" loc="12" cloc="0" eloc="7" lloc="5" ncloc="12" npath="1" hnt="16" hnd="26" hv="75.207035490257" hd="2.9166666666667" hl="0.34285714285714" he="219.35385351325" ht="12.186325195181" hb="0.012123897540807" hi="25.785269310945" mi="68.292972345277"/>
+      <method name="execute" start="65" end="65" ccn="1" ccn2="1" loc="1" cloc="0" eloc="0" lloc="0" ncloc="1" npath="1" hnt="3" hnd="3" hv="4.7548875021635" hd="4.5" hl="0.22222222222222" he="21.396993759736" ht="1.1887218755409" hb="0.0025690974927435" hi="1.0566416671474" mi="100"/>
+      <method name="render" start="73" end="82" ccn="2" ccn2="2" loc="10" cloc="0" eloc="7" lloc="4" ncloc="10" npath="2" hnt="19" hnd="31" hv="94.129729897351" hd="6.2307692307692" hl="0.16049382716049" he="586.50062474503" ht="32.583368041391" hb="0.023355601934126" hi="15.107240600809" mi="67.475994805632"/>
+      <method name="redirect" start="89" end="92" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="get" start="99" end="102" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Controller\Post" noc="2" noi="0" nom="4" nof="0" cr="0.15" rcr="0.201">
+    <class name="Add" fqname="d0niek\Wykop\Controller\Post\Add" start="14" end="79" ca="0" cbo="5" ce="5" dit="1" noam="2" nocc="0" noom="0" nom="3" loc="66" cloc="16" eloc="38" lloc="23" ncloc="50" cr="0.15" rcr="0.1755" impl="0" cis="1" csz="3" npm="1" vars="0" varsi="3" varsnp="0" wmc="10" wmci="15" wmcnp="3">
+      <file name="/home/d0niek/public_html/wykop/src/Controller/Post/Add.php"/>
+      <method name="execute" start="19" end="32" ccn="3" ccn2="3" loc="14" cloc="0" eloc="12" lloc="8" ncloc="14" npath="3" hnt="26" hnd="60" hv="153.57915548582" hd="4.8888888888889" hl="0.20454545454545" he="750.83142681957" ht="41.712857045532" hb="0.027536392288144" hi="31.413918167554" mi="60.746542998402"/>
+      <method name="isValid" start="41" end="59" ccn="4" ccn2="6" loc="19" cloc="0" eloc="15" lloc="10" ncloc="19" npath="8" hnt="26" hnd="58" hv="152.30750587332" hd="7.92" hl="0.12626262626263" he="1206.2754465167" ht="67.015302584259" hb="0.037772558623937" hi="19.230745691075" mi="58.254326738538"/>
+      <method name="addPost" start="66" end="78" ccn="1" ccn2="1" loc="13" cloc="1" eloc="11" lloc="5" ncloc="12" npath="1" hnt="25" hnd="43" hv="135.65661886755" hd="5.0526315789474" hl="0.19791666666667" he="685.42291638342" ht="38.07905091019" hb="0.02591300779128" hi="26.848705817536" mi="62.217214652742"/>
+    </class>
+    <class name="Edit" fqname="d0niek\Wykop\Controller\Post\Edit" start="12" end="25" ca="0" cbo="2" ce="2" dit="1" noam="0" nocc="0" noom="0" nom="1" loc="14" cloc="0" eloc="9" lloc="2" ncloc="14" cr="0.15" rcr="0.1755" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="3" varsnp="0" wmc="1" wmci="6" wmcnp="1">
+      <file name="/home/d0niek/public_html/wykop/src/Controller/Post/Edit.php"/>
+      <method name="execute" start="14" end="24" ccn="1" ccn2="1" loc="11" cloc="0" eloc="9" lloc="2" ncloc="11" npath="1" hnt="16" hnd="21" hv="70.27707876446" hd="7.3125" hl="0.13675213675214" he="513.90113846511" ht="28.550063248062" hb="0.021386110107324" hi="9.6105406857381" mi="66.118271475959"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Controller\User" noc="3" noi="0" nom="8" nof="0" cr="0.15" rcr="0.2265">
+    <class name="Login" fqname="d0niek\Wykop\Controller\User\Login" start="12" end="100" ca="0" cbo="2" ce="2" dit="1" noam="3" nocc="0" noom="0" nom="4" loc="89" cloc="21" eloc="49" lloc="33" ncloc="68" cr="0.15" rcr="0.1755" impl="0" cis="1" csz="4" npm="1" vars="0" varsi="3" varsnp="0" wmc="13" wmci="18" wmcnp="4">
+      <file name="/home/d0niek/public_html/wykop/src/Controller/User/Login.php"/>
+      <method name="execute" start="14" end="30" ccn="4" ccn2="4" loc="17" cloc="0" eloc="14" lloc="9" ncloc="17" npath="6" hnt="25" hnd="53" hv="143.19801136408" hd="6.3409090909091" hl="0.15770609318996" he="908.0055720586" ht="50.444754003255" hb="0.031256313511329" hi="22.583198924801" mi="59.364493421189"/>
+      <method name="isValid" start="38" end="57" ccn="3" ccn2="4" loc="20" cloc="1" eloc="15" lloc="11" ncloc="19" npath="4" hnt="30" hnd="58" hv="175.73942985383" hd="7.92" hl="0.12626262626263" he="1391.8562844423" ht="77.325349135684" hb="0.041553570037257" hi="22.189321951241" mi="58.088172126298"/>
+      <method name="login" start="65" end="81" ccn="2" ccn2="2" loc="17" cloc="2" eloc="11" lloc="8" ncloc="15" npath="2" hnt="29" hnd="56" hv="168.41329273967" hd="4.96" hl="0.20161290322581" he="835.32993198877" ht="46.40721844382" hb="0.029565423729152" hi="33.954292891063" mi="61.424974972408"/>
+      <method name="isPasswordMatch" start="89" end="99" ccn="3" ccn2="3" loc="11" cloc="0" eloc="9" lloc="5" ncloc="11" npath="3" hnt="20" hnd="36" hv="103.39850002885" hd="8.4" hl="0.11904761904762" he="868.54740024231" ht="48.252633346795" hb="0.030344111701435" hi="12.309345241529" mi="64.67502425653"/>
+    </class>
+    <class name="Logout" fqname="d0niek\Wykop\Controller\User\Logout" start="11" end="21" ca="0" cbo="1" ce="1" dit="1" noam="0" nocc="0" noom="0" nom="1" loc="11" cloc="0" eloc="6" lloc="3" ncloc="11" cr="0.15" rcr="0.1755" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="3" varsnp="0" wmc="2" wmci="7" wmcnp="2">
+      <file name="/home/d0niek/public_html/wykop/src/Controller/User/Logout.php"/>
+      <method name="execute" start="13" end="20" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="11" hnd="16" hv="44" hd="5" hl="0.2" he="220" ht="12.222222222222" hb="0.012147694623972" hi="8.8" mi="71.248953510018"/>
+    </class>
+    <class name="Register" fqname="d0niek\Wykop\Controller\User\Register" start="14" end="92" ca="0" cbo="5" ce="5" dit="1" noam="2" nocc="0" noom="0" nom="3" loc="79" cloc="16" eloc="49" lloc="33" ncloc="63" cr="0.15" rcr="0.1755" impl="0" cis="1" csz="3" npm="1" vars="0" varsi="3" varsnp="0" wmc="12" wmci="17" wmcnp="4">
+      <file name="/home/d0niek/public_html/wykop/src/Controller/User/Register.php"/>
+      <method name="execute" start="19" end="36" ccn="4" ccn2="4" loc="18" cloc="0" eloc="15" lloc="10" ncloc="18" npath="6" hnt="26" hnd="61" hv="154.19917077664" hd="6.0576923076923" hl="0.16507936507937" he="934.09113066615" ht="51.893951703675" hb="0.031852112738879" hi="25.455101207571" mi="58.485796671217"/>
+      <method name="isValid" start="45" end="72" ccn="5" ccn2="7" loc="28" cloc="1" eloc="22" lloc="16" ncloc="27" npath="12" hnt="35" hnd="88" hv="226.08010665231" hd="7.5384615384615" hl="0.13265306122449" he="1704.2961886097" ht="94.683121589427" hb="0.047560030792097" hi="29.990218229387" mi="53.290343522836"/>
+      <method name="registerAndLogin" start="78" end="91" ccn="1" ccn2="1" loc="14" cloc="1" eloc="12" lloc="7" ncloc="13" npath="1" hnt="27" hnd="55" hv="156.09671226517" hd="4.8" hl="0.20833333333333" he="749.2642188728" ht="41.625789937378" hb="0.02749806119882" hi="32.520148388576" mi="60.96610426458"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Core\DB" noc="1" noi="1" nom="4" nof="0" cr="0.15" rcr="0.15">
+    <class name="PdoDB" fqname="d0niek\Wykop\Core\DB\PdoDB" start="8" end="48" ca="0" cbo="1" ce="1" dit="0" noam="0" nocc="0" noom="0" nom="3" loc="41" cloc="14" eloc="14" lloc="7" ncloc="27" cr="0.15" rcr="0.2775" impl="1" cis="2" csz="5" npm="2" vars="2" varsi="2" varsnp="0" wmc="5" wmci="5" wmcnp="4">
+      <file name="/home/d0niek/public_html/wykop/src/Core/DB/PdoDB.php"/>
+      <method name="__construct" start="20" end="25" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="3" ncloc="6" npath="1" hnt="24" hnd="45" hv="131.80447431191" hd="5.7142857142857" hl="0.175" he="753.1684246395" ht="41.84269025775" hb="0.027593501557675" hi="23.065783004585" mi="69.774411730157"/>
+      <method name="getInstance" start="32" end="39" ccn="2" ccn2="3" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="3" hnt="16" hnd="23" hv="72.376991296912" hd="30.875" hl="0.032388663967611" he="2234.6396062922" ht="124.14664479401" hb="0.056974922072101" hi="2.3441940501024" mi="69.600980504738"/>
+      <method name="getPdo" start="44" end="47" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Core" noc="5" noi="4" nom="35" nof="0" cr="0.15" rcr="0.15">
+    <class name="DependenceInjection" fqname="d0niek\Wykop\Core\DependenceInjection" start="11" end="112" ca="0" cbo="3" ce="3" dit="0" noam="0" nocc="0" noom="0" nom="10" loc="102" cloc="15" eloc="52" lloc="25" ncloc="87" cr="0.15" rcr="0.2775" impl="1" cis="9" csz="13" npm="9" vars="3" varsi="3" varsnp="0" wmc="17" wmci="17" wmcnp="16">
+      <file name="/home/d0niek/public_html/wykop/src/Core/DependenceInjection.php"/>
+      <method name="__construct" start="34" end="38" ccn="1" ccn2="1" loc="5" cloc="0" eloc="4" lloc="2" ncloc="5" npath="1" hnt="11" hnd="16" hv="44" hd="5" hl="0.2" he="220" ht="12.222222222222" hb="0.012147694623972" hi="8.8" mi="75.224704826598"/>
+      <method name="getInstance" start="40" end="47" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="15" hnd="20" hv="64.82892142331" hd="22" hl="0.045454545454545" he="1426.2362713128" ht="79.235348406268" hb="0.042235054923437" hi="2.946769155605" mi="70.070401826814"/>
+      <method name="get" start="49" end="56" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="14" hnd="21" hv="61.492443918903" hd="6.5" hl="0.15384615384615" he="399.70088547287" ht="22.205604748493" hb="0.018087094966565" hi="9.4603759875235" mi="70.231077319818"/>
+      <method name="has" start="58" end="61" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="put" start="63" end="70" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="15" hnd="22" hv="66.891474279559" hd="5.7777777777778" hl="0.17307692307692" he="386.48407361523" ht="21.471337423068" hb="0.017686143590368" hi="11.577370548385" mi="69.975160642356"/>
+      <method name="remove" start="72" end="79" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="14" hnd="21" hv="61.492443918903" hd="6.5" hl="0.15384615384615" he="399.70088547287" ht="22.205604748493" hb="0.018087094966565" hi="9.4603759875235" mi="70.231077319818"/>
+      <method name="getParam" start="81" end="88" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="14" hnd="21" hv="61.492443918903" hd="6.5" hl="0.15384615384615" he="399.70088547287" ht="22.205604748493" hb="0.018087094966565" hi="9.4603759875235" mi="70.231077319818"/>
+      <method name="hasParam" start="90" end="93" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="putParam" start="95" end="102" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="15" hnd="22" hv="66.891474279559" hd="5.7777777777778" hl="0.17307692307692" he="386.48407361523" ht="21.471337423068" hb="0.017686143590368" hi="11.577370548385" mi="69.975160642356"/>
+      <method name="removeParam" start="104" end="111" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="14" hnd="21" hv="61.492443918903" hd="6.5" hl="0.15384615384615" he="399.70088547287" ht="22.205604748493" hb="0.018087094966565" hi="9.4603759875235" mi="70.231077319818"/>
+    </class>
+    <class name="FrontController" fqname="d0niek\Wykop\Core\FrontController" start="12" end="70" ca="0" cbo="4" ce="4" dit="0" noam="0" nocc="0" noom="0" nom="3" loc="59" cloc="22" eloc="18" lloc="11" ncloc="37" cr="0.15" rcr="0.2775" impl="1" cis="2" csz="6" npm="2" vars="3" varsi="3" varsnp="0" wmc="4" wmci="4" wmcnp="2">
+      <file name="/home/d0niek/public_html/wykop/src/Core/FrontController.php"/>
+      <method name="__construct" start="36" end="44" ccn="1" ccn2="1" loc="9" cloc="0" eloc="5" lloc="3" ncloc="9" npath="1" hnt="10" hnd="14" hv="38.073549220576" hd="2.6666666666667" hl="0.375" he="101.5294645882" ht="5.6405258104557" hb="0.0072544887115339" hi="14.277580957716" mi="73.550644962182"/>
+      <method name="getController" start="46" end="52" ccn="1" ccn2="1" loc="7" cloc="0" eloc="5" lloc="3" ncloc="7" npath="1" hnt="14" hnd="22" hv="62.432042660922" hd="5.0555555555556" hl="0.1978021978022" he="315.62866011911" ht="17.534925562173" hb="0.015452415109867" hi="12.349195251611" mi="72.046723304224"/>
+      <method name="getControllerClass" start="60" end="69" ccn="2" ccn2="2" loc="10" cloc="0" eloc="8" lloc="5" ncloc="10" npath="2" hnt="20" hnd="37" hv="104.18906731258" hd="6.5625" hl="0.15238095238095" he="683.7407542388" ht="37.985597457711" hb="0.025870593364723" hi="15.876429304774" mi="65.902204424631"/>
+    </class>
+    <class name="Kernel" fqname="d0niek\Wykop\Core\Kernel" start="11" end="57" ca="0" cbo="5" ce="5" dit="0" noam="0" nocc="0" noom="0" nom="2" loc="47" cloc="16" eloc="16" lloc="11" ncloc="31" cr="0.15" rcr="0.15" impl="0" cis="2" csz="5" npm="2" vars="3" varsi="3" varsnp="0" wmc="3" wmci="3" wmcnp="3">
+      <file name="/home/d0niek/public_html/wykop/src/Core/Kernel.php"/>
+      <method name="__construct" start="35" end="43" ccn="1" ccn2="1" loc="9" cloc="0" eloc="5" lloc="3" ncloc="9" npath="1" hnt="10" hnd="14" hv="38.073549220576" hd="2.6666666666667" hl="0.375" he="101.5294645882" ht="5.6405258104557" hb="0.0072544887115339" hi="14.277580957716" mi="73.550644962182"/>
+      <method name="start" start="45" end="56" ccn="2" ccn2="2" loc="12" cloc="0" eloc="11" lloc="8" ncloc="12" npath="2" hnt="22" hnd="42" hv="118.63098330113" hd="8.125" hl="0.12307692307692" he="963.8767393217" ht="53.548707740095" hb="0.032525682014358" hi="14.600736406293" mi="62.490528988041"/>
+    </class>
+    <class name="RepositoryManager" fqname="d0niek\Wykop\Core\RepositoryManager" start="11" end="59" ca="0" cbo="2" ce="2" dit="0" noam="0" nocc="0" noom="0" nom="3" loc="49" cloc="18" eloc="17" lloc="10" ncloc="31" cr="0.15" rcr="0.2775" impl="1" cis="2" csz="5" npm="2" vars="2" varsi="2" varsnp="0" wmc="4" wmci="4" wmcnp="2">
+      <file name="/home/d0niek/public_html/wykop/src/Core/RepositoryManager.php"/>
+      <method name="__construct" start="29" end="33" ccn="1" ccn2="1" loc="5" cloc="0" eloc="4" lloc="2" ncloc="5" npath="1" hnt="8" hnd="10" hv="26.575424759099" hd="3" hl="0.33333333333333" he="79.726274277297" ht="4.4292374598498" hb="0.0061746601349011" hi="8.8584749196996" mi="76.757952883514"/>
+      <method name="getRepository" start="35" end="41" ccn="1" ccn2="1" loc="7" cloc="0" eloc="5" lloc="3" ncloc="7" npath="1" hnt="11" hnd="17" hv="44.962091253754" hd="4.2857142857143" hl="0.23333333333333" he="192.6946768018" ht="10.705259822322" hb="0.01112052327893" hi="10.491154625876" mi="73.044937593078"/>
+      <method name="getRepositoryClass" start="49" end="58" ccn="2" ccn2="2" loc="10" cloc="0" eloc="8" lloc="5" ncloc="10" npath="2" hnt="21" hnd="39" hv="110.99344659611" hd="6.4705882352941" hl="0.15454545454545" he="718.19288973952" ht="39.899604985529" hb="0.026732494085983" hi="17.153532655762" mi="65.709822803119"/>
+    </class>
+    <class name="Router" fqname="d0niek\Wykop\Core\Router" start="14" end="114" ca="0" cbo="5" ce="5" dit="0" noam="0" nocc="0" noom="0" nom="5" loc="101" cloc="32" eloc="45" lloc="24" ncloc="69" cr="0.15" rcr="0.2775" impl="1" cis="2" csz="7" npm="2" vars="2" varsi="2" varsnp="0" wmc="11" wmci="11" wmcnp="5">
+      <file name="/home/d0niek/public_html/wykop/src/Core/Router.php"/>
+      <method name="__construct" start="32" end="36" ccn="1" ccn2="1" loc="5" cloc="0" eloc="4" lloc="2" ncloc="5" npath="1" hnt="8" hnd="10" hv="26.575424759099" hd="3" hl="0.33333333333333" he="79.726274277297" ht="4.4292374598498" hb="0.0061746601349011" hi="8.8584749196996" mi="76.757952883514"/>
+      <method name="findRoute" start="38" end="59" ccn="4" ccn2="4" loc="22" cloc="0" eloc="16" lloc="11" ncloc="22" npath="5" hnt="34" hnd="74" hv="211.12141443138" hd="10.403225806452" hl="0.096124031007752" he="2196.3437469071" ht="122.0190970504" hb="0.056322114773195" hi="20.293841387203" mi="56.918952667957"/>
+      <method name="compareUrlsLength" start="67" end="70" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="9" hnd="11" hv="31.134884567736" hd="5.25" hl="0.19047619047619" he="163.45814398061" ht="9.0810079989229" hb="0.0099651334916741" hi="5.9304542033782" mi="79.00185423579"/>
+      <method name="getRouteParametersOrCompareConstants" start="78" end="91" ccn="4" ccn2="4" loc="14" cloc="0" eloc="11" lloc="7" ncloc="14" npath="4" hnt="28" hnd="60" hv="165.39293667704" hd="10.5" hl="0.095238095238095" he="1736.6258351089" ht="96.479213061606" hb="0.048159605084684" hi="15.751708254956" mi="61.211000806608"/>
+      <method name="createRoute" start="100" end="113" ccn="1" ccn2="1" loc="14" cloc="1" eloc="11" lloc="3" ncloc="13" npath="1" hnt="19" hnd="29" hv="92.301638907424" hd="6.375" hl="0.15686274509804" he="588.42294803483" ht="32.690163779713" hb="0.023406607878484" hi="14.478688456066" mi="63.388172346683"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Exception" noc="7" noi="0" nom="0" nof="0" cr="0.15" rcr="0.2775">
+    <class name="DependenceInjectionException" fqname="d0niek\Wykop\Exception\DependenceInjectionException" start="8" end="10" ca="2" cbo="0" ce="0" dit="2" noam="0" nocc="0" noom="0" nom="0" loc="3" cloc="0" eloc="0" lloc="0" ncloc="3" cr="0.15" rcr="0.16821428571429" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="/home/d0niek/public_html/wykop/src/Exception/DependenceInjectionException.php"/>
+    </class>
+    <class name="FrontControllerException" fqname="d0niek\Wykop\Exception\FrontControllerException" start="8" end="10" ca="2" cbo="0" ce="0" dit="2" noam="0" nocc="0" noom="0" nom="0" loc="3" cloc="0" eloc="0" lloc="0" ncloc="3" cr="0.15" rcr="0.16821428571429" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="/home/d0niek/public_html/wykop/src/Exception/FrontControllerException.php"/>
+    </class>
+    <class name="HtmlResponseException" fqname="d0niek\Wykop\Exception\HtmlResponseException" start="8" end="10" ca="1" cbo="0" ce="0" dit="2" noam="0" nocc="0" noom="0" nom="0" loc="3" cloc="0" eloc="0" lloc="0" ncloc="3" cr="0.15" rcr="0.16821428571429" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="/home/d0niek/public_html/wykop/src/Exception/HtmlResponseException.php"/>
+    </class>
+    <class name="ModelNotFoundException" fqname="d0niek\Wykop\Exception\ModelNotFoundException" start="8" end="10" ca="3" cbo="0" ce="0" dit="2" noam="0" nocc="0" noom="0" nom="0" loc="3" cloc="0" eloc="0" lloc="0" ncloc="3" cr="0.15" rcr="0.16821428571429" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="/home/d0niek/public_html/wykop/src/Exception/ModelNotFoundException.php"/>
+    </class>
+    <class name="RepositoryException" fqname="d0niek\Wykop\Exception\RepositoryException" start="8" end="10" ca="1" cbo="0" ce="0" dit="2" noam="0" nocc="0" noom="0" nom="0" loc="3" cloc="0" eloc="0" lloc="0" ncloc="3" cr="0.15" rcr="0.16821428571429" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="/home/d0niek/public_html/wykop/src/Exception/RepositoryException.php"/>
+    </class>
+    <class name="RepositoryManagerException" fqname="d0niek\Wykop\Exception\RepositoryManagerException" start="8" end="10" ca="1" cbo="0" ce="0" dit="2" noam="0" nocc="0" noom="0" nom="0" loc="3" cloc="0" eloc="0" lloc="0" ncloc="3" cr="0.15" rcr="0.16821428571429" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="/home/d0niek/public_html/wykop/src/Exception/RepositoryManagerException.php"/>
+    </class>
+    <class name="RouterException" fqname="d0niek\Wykop\Exception\RouterException" start="8" end="10" ca="2" cbo="0" ce="0" dit="2" noam="0" nocc="0" noom="0" nom="0" loc="3" cloc="0" eloc="0" lloc="0" ncloc="3" cr="0.15" rcr="0.16821428571429" impl="0" cis="0" csz="0" npm="0" vars="0" varsi="0" varsnp="0" wmc="0" wmci="0" wmcnp="0">
+      <file name="/home/d0niek/public_html/wykop/src/Exception/RouterException.php"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Http" noc="1" noi="3" nom="21" nof="0" cr="0.2775" rcr="0.15">
+    <class name="Request" fqname="d0niek\Wykop\Http\Request" start="10" end="89" ca="0" cbo="1" ce="1" dit="0" noam="0" nocc="0" noom="0" nom="7" loc="80" cloc="19" eloc="34" lloc="17" ncloc="61" cr="0.15" rcr="0.2775" impl="1" cis="7" csz="11" npm="7" vars="4" varsi="4" varsnp="0" wmc="10" wmci="10" wmcnp="10">
+      <file name="/home/d0niek/public_html/wykop/src/Http/Request.php"/>
+      <method name="__construct" start="39" end="46" ccn="1" ccn2="1" loc="8" cloc="0" eloc="6" lloc="4" ncloc="8" npath="1" hnt="14" hnd="24" hv="64.189475010096" hd="2.9545454545455" hl="0.33846153846154" he="189.65072162074" ht="10.536151201152" hb="0.011003100463768" hi="21.725668464956" mi="70.235048224659"/>
+      <method name="getHost" start="48" end="51" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="getPath" start="53" end="60" ccn="2" ccn2="2" loc="8" cloc="0" eloc="7" lloc="4" ncloc="8" npath="2" hnt="18" hnd="28" hv="86.532388597037" hd="6" hl="0.16666666666667" he="519.19433158222" ht="28.844129532346" hb="0.021532710764107" hi="14.422064766173" mi="67.731905226369"/>
+      <method name="getMethod" start="62" end="65" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="7" hnd="7" hv="19.651484454403" hd="6.25" hl="0.16" he="122.82177784002" ht="6.8234321022233" hb="0.0082362400950509" hi="3.1442375127045" mi="80.401219851729"/>
+      <method name="get" start="67" end="74" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="13" hnd="20" hv="56.185065233536" hd="7.4285714285714" hl="0.13461538461538" he="417.37477030627" ht="23.187487239237" hb="0.018616421668744" hi="7.5633741660529" mi="70.505562287008"/>
+      <method name="post" start="76" end="83" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="13" hnd="20" hv="56.185065233536" hd="7.4285714285714" hl="0.13461538461538" he="417.37477030627" ht="23.187487239237" hb="0.018616421668744" hi="7.5633741660529" mi="70.505562287008"/>
+      <method name="isPost" start="85" end="88" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="8" hnd="8" hv="24" hd="9" hl="0.11111111111111" he="216" ht="12" hb="0.012" hi="2.6666666666667" mi="79.793333921501"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Http\Response" noc="2" noi="0" nom="11" nof="0" cr="0.15" rcr="0.2775">
+    <class name="HtmlResponse" fqname="d0niek\Wykop\Http\Response\HtmlResponse" start="13" end="123" ca="1" cbo="3" ce="3" dit="0" noam="0" nocc="0" noom="0" nom="7" loc="111" cloc="43" eloc="36" lloc="21" ncloc="68" cr="0.15" rcr="0.21375" impl="1" cis="6" csz="12" npm="6" vars="5" varsi="5" varsnp="0" wmc="8" wmci="8" wmcnp="6">
+      <file name="/home/d0niek/public_html/wykop/src/Http/Response/HtmlResponse.php"/>
+      <method name="__construct" start="48" end="56" ccn="1" ccn2="1" loc="9" cloc="0" eloc="7" lloc="5" ncloc="9" npath="1" hnt="18" hnd="27" hv="85.587975038942" hd="3.75" hl="0.26666666666667" he="320.95490639603" ht="17.830828133113" hb="0.015625769897187" hi="22.823460010385" mi="67.89977932897"/>
+      <method name="getHtml" start="58" end="69" ccn="1" ccn2="1" loc="12" cloc="0" eloc="9" lloc="7" ncloc="12" npath="1" hnt="19" hnd="34" hv="96.661793983756" hd="6.4615384615385" hl="0.1547619047619" he="624.58389958735" ht="34.699105532631" hb="0.024355998307054" hi="14.959563354629" mi="65.148904720509"/>
+      <method name="getTemplateFile" start="77" end="86" ccn="2" ccn2="2" loc="10" cloc="0" eloc="8" lloc="5" ncloc="10" npath="2" hnt="21" hnd="39" hv="110.99344659611" hd="6.4705882352941" hl="0.15454545454545" he="718.19288973952" ht="39.899604985529" hb="0.026732494085983" hi="17.153532655762" mi="65.709822803119"/>
+      <method name="getTemplate" start="93" end="96" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="setTemplate" start="101" end="104" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="getParameters" start="109" end="112" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="setParameters" start="117" end="120" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+    </class>
+    <class name="RedirectResponse" fqname="d0niek\Wykop\Http\Response\RedirectResponse" start="10" end="51" ca="2" cbo="0" ce="0" dit="0" noam="0" nocc="0" noom="0" nom="4" loc="42" cloc="16" eloc="12" lloc="4" ncloc="26" cr="0.15" rcr="0.21375" impl="1" cis="4" csz="5" npm="4" vars="1" varsi="1" varsnp="0" wmc="4" wmci="4" wmcnp="4">
+      <file name="/home/d0niek/public_html/wykop/src/Http/Response/RedirectResponse.php"/>
+      <method name="__construct" start="22" end="25" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="getHtml" start="27" end="30" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getRedirectUrl" start="37" end="40" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="setRedirectUrl" start="45" end="48" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Model" noc="8" noi="0" nom="28" nof="0" cr="0.15" rcr="0.15">
+    <class name="Model" fqname="d0niek\Wykop\Model\Model" start="8" end="36" ca="7" cbo="0" ce="0" dit="0" noam="0" nocc="3" noom="0" nom="2" loc="29" cloc="13" eloc="6" lloc="2" ncloc="16" cr="0.5325" rcr="0.15" impl="0" cis="2" csz="3" npm="2" vars="1" varsi="1" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/home/d0niek/public_html/wykop/src/Model/Model.php"/>
+      <method name="__construct" start="20" end="23" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="getId" start="30" end="33" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+    <class name="ModelFactory" fqname="d0niek\Wykop\Model\ModelFactory" start="10" end="18" ca="0" cbo="2" ce="2" dit="0" noam="0" nocc="3" noom="0" nom="1" loc="9" cloc="5" eloc="0" lloc="0" ncloc="4" cr="0.5325" rcr="0.15" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/home/d0niek/public_html/wykop/src/Model/ModelFactory.php"/>
+      <method name="create" start="17" end="17" ccn="1" ccn2="1" loc="1" cloc="0" eloc="0" lloc="0" ncloc="1" npath="1" hnt="3" hnd="3" hv="4.7548875021635" hd="4.5" hl="0.22222222222222" he="21.396993759736" ht="1.1887218755409" hb="0.0025690974927435" hi="1.0566416671474" mi="100"/>
+    </class>
+    <class name="PostFactory" fqname="d0niek\Wykop\Model\PostFactory" start="10" end="24" ca="2" cbo="4" ce="4" dit="1" noam="0" nocc="0" noom="0" nom="1" loc="15" cloc="0" eloc="9" lloc="7" ncloc="15" cr="0.15" rcr="0.1925" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/home/d0niek/public_html/wykop/src/Model/PostFactory.php"/>
+      <method name="create" start="12" end="23" ccn="1" ccn2="1" loc="12" cloc="0" eloc="9" lloc="7" ncloc="12" npath="1" hnt="23" hnd="54" hv="132.36241254976" hd="4.64" hl="0.21551724137931" he="614.16159423089" ht="34.120088568383" hb="0.024084290035751" hi="28.526382015034" mi="64.193061143155"/>
+    </class>
+    <class name="PostModel" fqname="d0niek\Wykop\Model\PostModel" start="8" end="130" ca="1" cbo="2" ce="2" dit="1" noam="9" nocc="0" noom="2" nom="11" loc="123" cloc="52" eloc="37" lloc="15" ncloc="71" cr="0.15" rcr="0.1925" impl="0" cis="11" csz="15" npm="11" vars="4" varsi="5" varsnp="0" wmc="12" wmci="12" wmcnp="12">
+      <file name="/home/d0niek/public_html/wykop/src/Model/PostModel.php"/>
+      <method name="__construct" start="38" end="45" ccn="1" ccn2="1" loc="8" cloc="0" eloc="7" lloc="5" ncloc="8" npath="1" hnt="15" hnd="22" hv="66.891474279559" hd="4.3333333333333" hl="0.23076923076923" he="289.86305521142" ht="16.103503067301" hb="0.014599589862225" hi="15.436494064514" mi="68.649288704811"/>
+      <method name="getAuthorLogin" start="50" end="53" ccn="2" ccn2="2" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="2" hnt="11" hnd="14" hv="41.880904142634" hd="8.75" hl="0.11428571428571" he="366.45791124804" ht="20.358772847114" hb="0.017069788752265" hi="4.7863890448724" mi="77.965710558689"/>
+      <method name="getId" start="60" end="63" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="setId" start="68" end="71" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="getText" start="76" end="79" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="setText" start="84" end="87" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="getAuthor" start="92" end="95" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="setAuthor" start="100" end="103" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="getLogin" start="108" end="111" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="setLogin" start="116" end="119" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="getCreatedAt" start="124" end="127" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+    </class>
+    <class name="Route" fqname="d0niek\Wykop\Model\Route" start="10" end="75" ca="6" cbo="1" ce="1" dit="1" noam="3" nocc="0" noom="1" nom="4" loc="66" cloc="30" eloc="17" lloc="8" ncloc="36" cr="0.15" rcr="0.1925" impl="0" cis="4" csz="7" npm="4" vars="3" varsi="4" varsnp="0" wmc="5" wmci="6" wmcnp="5">
+      <file name="/home/d0niek/public_html/wykop/src/Model/Route.php"/>
+      <method name="__construct" start="34" end="39" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="3" ncloc="6" npath="1" hnt="10" hnd="14" hv="38.073549220576" hd="2.6666666666667" hl="0.375" he="101.5294645882" ht="5.6405258104557" hb="0.0072544887115339" hi="14.277580957716" mi="73.550644962182"/>
+      <method name="getUrl" start="46" end="49" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getController" start="54" end="57" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="getParam" start="65" end="72" ccn="2" ccn2="2" loc="8" cloc="0" eloc="6" lloc="3" ncloc="8" npath="2" hnt="13" hnd="20" hv="56.185065233536" hd="7.4285714285714" hl="0.13461538461538" he="417.37477030627" ht="23.187487239237" hb="0.018616421668744" hi="7.5633741660529" mi="70.505562287008"/>
+    </class>
+    <class name="RouteFactory" fqname="d0niek\Wykop\Model\RouteFactory" start="10" end="22" ca="1" cbo="3" ce="3" dit="1" noam="0" nocc="0" noom="0" nom="1" loc="13" cloc="0" eloc="7" lloc="5" ncloc="13" cr="0.15" rcr="0.1925" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/home/d0niek/public_html/wykop/src/Model/RouteFactory.php"/>
+      <method name="create" start="12" end="21" ccn="1" ccn2="1" loc="10" cloc="0" eloc="7" lloc="5" ncloc="10" npath="1" hnt="16" hnd="33" hv="80.710305909735" hd="4.2" hl="0.23809523809524" he="338.98328482089" ht="18.832404712272" hb="0.016205568383699" hi="19.216739502318" mi="68.078216937298"/>
+    </class>
+    <class name="UserFactory" fqname="d0niek\Wykop\Model\UserFactory" start="10" end="21" ca="2" cbo="3" ce="3" dit="1" noam="0" nocc="0" noom="0" nom="1" loc="12" cloc="0" eloc="6" lloc="4" ncloc="12" cr="0.15" rcr="0.1925" impl="0" cis="1" csz="1" npm="1" vars="0" varsi="0" varsnp="0" wmc="1" wmci="1" wmcnp="1">
+      <file name="/home/d0niek/public_html/wykop/src/Model/UserFactory.php"/>
+      <method name="create" start="12" end="20" ccn="1" ccn2="1" loc="9" cloc="0" eloc="6" lloc="4" ncloc="9" npath="1" hnt="14" hnd="25" hv="65.013986656846" hd="4.4545454545455" hl="0.22448979591837" he="289.60775874413" ht="16.08931993023" hb="0.014591016224921" hi="14.594976596435" mi="70.196236247292"/>
+    </class>
+    <class name="UserModel" fqname="d0niek\Wykop\Model\UserModel" start="8" end="83" ca="4" cbo="0" ce="0" dit="1" noam="5" nocc="0" noom="2" nom="7" loc="76" cloc="32" eloc="23" lloc="9" ncloc="44" cr="0.15" rcr="0.1925" impl="0" cis="7" csz="9" npm="7" vars="2" varsi="3" varsnp="0" wmc="7" wmci="7" wmcnp="7">
+      <file name="/home/d0niek/public_html/wykop/src/Model/UserModel.php"/>
+      <method name="__construct" start="25" end="30" ccn="1" ccn2="1" loc="6" cloc="0" eloc="5" lloc="3" ncloc="6" npath="1" hnt="11" hnd="14" hv="41.880904142634" hd="5.4" hl="0.18518518518519" he="226.15688237022" ht="12.56427124279" hb="0.012373292636275" hi="7.7557229893766" mi="73.260812836461"/>
+      <method name="getId" start="37" end="40" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="setId" start="45" end="48" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="getLogin" start="53" end="56" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="setLogin" start="61" end="64" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+      <method name="getPassword" start="69" end="72" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="5" hnd="5" hv="11.609640474437" hd="8" hl="0.125" he="92.877123795494" ht="5.1598402108608" hb="0.0068362496969366" hi="1.4512050593046" mi="82.001716149821"/>
+      <method name="setPassword" start="77" end="80" ccn="1" ccn2="1" loc="4" cloc="0" eloc="3" lloc="1" ncloc="4" npath="1" hnt="6" hnd="6" hv="15.509775004327" hd="4" hl="0.25" he="62.039100017308" ht="3.4466166676282" hb="0.0052238304343202" hi="3.8774437510817" mi="81.120955834208"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Repository\PDO" noc="2" noi="0" nom="6" nof="0" cr="0.15" rcr="0.2775">
+    <class name="PostRepository" fqname="d0niek\Wykop\Repository\PDO\PostRepository" start="14" end="80" ca="0" cbo="5" ce="5" dit="2" noam="4" nocc="0" noom="0" nom="4" loc="67" cloc="8" eloc="28" lloc="19" ncloc="59" cr="0.15" rcr="0.3954375" impl="2" cis="2" csz="9" npm="2" vars="5" varsi="5" varsnp="0" wmc="6" wmci="6" wmcnp="3">
+      <file name="/home/d0niek/public_html/wykop/src/Repository/PDO/PostRepository.php"/>
+      <method name="save" start="32" end="40" ccn="2" ccn2="2" loc="9" cloc="1" eloc="6" lloc="4" ncloc="8" npath="2" hnt="18" hnd="32" hv="90" hd="7.5" hl="0.13333333333333" he="675" ht="37.5" hb="0.02564963920015" hi="12" mi="69.072799013326"/>
+      <method name="countPost" start="42" end="49" ccn="1" ccn2="1" loc="8" cloc="0" eloc="6" lloc="4" ncloc="8" npath="1" hnt="19" hnd="27" hv="90.342862541106" hd="7.2727272727273" hl="0.1375" he="657.03900029895" ht="36.502166683275" hb="0.025192591501806" hi="12.422143599402" mi="69.195739248617"/>
+      <method name="createModel" start="51" end="61" ccn="1" ccn2="1" loc="11" cloc="1" eloc="8" lloc="6" ncloc="10" npath="1" hnt="19" hnd="38" hv="99.710622755428" hd="4.3235294117647" hl="0.2312925170068" he="431.10181014847" ht="23.950100563804" hb="0.019022399993217" hi="23.062320909419" mi="66.170310812076"/>
+      <method name="getAuthor" start="68" end="79" ccn="2" ccn2="2" loc="12" cloc="1" eloc="8" lloc="5" ncloc="11" npath="2" hnt="15" hnd="25" hv="69.657842846621" hd="6" hl="0.16666666666667" he="417.94705707973" ht="23.219280948874" hb="0.018633435153069" hi="11.609640474437" mi="67.126521331823"/>
+    </class>
+    <class name="UserRepository" fqname="d0niek\Wykop\Repository\PDO\UserRepository" start="13" end="47" ca="0" cbo="3" ce="3" dit="2" noam="2" nocc="0" noom="0" nom="2" loc="35" cloc="2" eloc="12" lloc="8" ncloc="33" cr="0.15" rcr="0.3954375" impl="2" cis="1" csz="7" npm="1" vars="5" varsi="5" varsnp="0" wmc="2" wmci="2" wmcnp="1">
+      <file name="/home/d0niek/public_html/wykop/src/Repository/PDO/UserRepository.php"/>
+      <method name="save" start="28" end="35" ccn="1" ccn2="1" loc="8" cloc="1" eloc="5" lloc="3" ncloc="7" npath="1" hnt="13" hnd="20" hv="56.185065233536" hd="7.4285714285714" hl="0.13461538461538" he="417.37477030627" ht="23.187487239237" hb="0.018616421668744" hi="7.5633741660529" mi="72.367322064822"/>
+      <method name="createModel" start="37" end="46" ccn="1" ccn2="1" loc="10" cloc="1" eloc="7" lloc="5" ncloc="9" npath="1" hnt="16" hnd="28" hv="76.917678752922" hd="4.6666666666667" hl="0.21428571428571" he="358.94916751363" ht="19.941620417424" hb="0.016835811150846" hi="16.482359732769" mi="68.22457878509"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Service" noc="1" noi="1" nom="3" nof="0" cr="0.15" rcr="0.15">
+    <class name="PasswordHash" fqname="d0niek\Wykop\Service\PasswordHash" start="8" end="42" ca="0" cbo="0" ce="0" dit="0" noam="0" nocc="0" noom="0" nom="2" loc="35" cloc="12" eloc="12" lloc="5" ncloc="23" cr="0.15" rcr="0.2775" impl="1" cis="2" csz="4" npm="2" vars="2" varsi="2" varsnp="0" wmc="2" wmci="2" wmcnp="2">
+      <file name="/home/d0niek/public_html/wykop/src/Service/PasswordHash.php"/>
+      <method name="__construct" start="26" end="30" ccn="1" ccn2="1" loc="5" cloc="0" eloc="4" lloc="2" ncloc="5" npath="1" hnt="8" hnd="10" hv="26.575424759099" hd="3" hl="0.33333333333333" he="79.726274277297" ht="4.4292374598498" hb="0.0061746601349011" hi="8.8584749196996" mi="76.757952883514"/>
+      <method name="hash" start="32" end="41" ccn="1" ccn2="1" loc="10" cloc="0" eloc="8" lloc="3" ncloc="10" npath="1" hnt="18" hnd="27" hv="85.587975038942" hd="6.5454545454545" hl="0.15277777777778" he="560.2122002549" ht="31.122900014161" hb="0.022652377319029" hi="13.07594063095" mi="66.634745083053"/>
+    </class>
+  </package>
+</metrics>

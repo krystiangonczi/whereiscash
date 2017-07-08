@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS `wykop_db`;
+
+CREATE TABLE IF NOT EXISTS users (
+    user_id int UNSIGNED NOT NULL AUTO_INCREMENT,
+    login VARCHAR(30) NOT NULL UNIQUE,
+    password VARCHAR(60) NOT NULL,
+    PRIMARY KEY(user_id)
+) ENGINE = InnoDB;
+
+CREATE TABLE IF NOT EXISTS posts (
+    post_id int UNSIGNED NOT NULL AUTO_INCREMENT,
+    user_id int UNSIGNED DEFAULT NULL,
+    login VARCHAR(30) DEFAULT '',
+    text VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY(post_id),
+    CONSTRAINT `posts_user` FOREIGN KEY (user_id) REFERENCES users (user_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE
+) ENGINE = InnoDB;

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pmd version="@project.version@" timestamp="2017-03-10T08:51:26+00:00">
+  <error filename="/home/d0niek/public_html/wykop/src/Controller/DefaultController.php" msg="Unexpected token: const, line: 13, col: 13, file: /home/d0niek/public_html/wykop/src/Controller/DefaultController.php." />
+  <error filename="/home/d0niek/public_html/wykop/src/Http/Session.php" msg="Unexpected token: const, line: 10, col: 12, file: /home/d0niek/public_html/wykop/src/Http/Session.php." />
+  <error filename="/home/d0niek/public_html/wykop/src/Repository/PDO/Repository.php" msg="Unexpected token: const, line: 17, col: 13, file: /home/d0niek/public_html/wykop/src/Repository/PDO/Repository.php." />
+</pmd>

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PDepend>
+  <Packages>
+    <Package name="d0niek\Wykop\Controller">
+      <Stats>
+        <TotalClasses>1</TotalClasses>
+        <ConcreteClasses>0</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>3</Ca>
+        <Ce>5</Ce>
+        <A>1</A>
+        <I>0.625</I>
+        <D>0.625</D>
+      </Stats>
+      <ConcreteClasses/>
+      <AbstractClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Controller/Controller.php">Controller</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>Ds</Package>
+        <Package>d0niek\Wykop\Core</Package>
+        <Package>d0niek\Wykop\Http</Package>
+        <Package>d0niek\Wykop\Http\Response</Package>
+        <Package>d0niek\Wykop\Model</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>d0niek\Wykop\Controller\Post</Package>
+        <Package>d0niek\Wykop\Controller\User</Package>
+        <Package>d0niek\Wykop\Core</Package>
+      </UsedBy>
+    </Package>
+    <Package name="d0niek\Wykop\Controller\Post">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>4</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Controller/Post/Add.php">Add</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Controller/Post/Edit.php">Edit</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Ds</Package>
+        <Package>d0niek\Wykop\Controller</Package>
+        <Package>d0niek\Wykop\Http</Package>
+        <Package>d0niek\Wykop\Model</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="d0niek\Wykop\Controller\User">
+      <Stats>
+        <TotalClasses>4</TotalClasses>
+        <ConcreteClasses>4</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>5</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Controller/User/Login.php">Login</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Controller/User/Logout.php">Logout</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Controller/User/Register.php">Register</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Ds</Package>
+        <Package>d0niek\Wykop\Controller</Package>
+        <Package>d0niek\Wykop\Exception</Package>
+        <Package>d0niek\Wykop\Http</Package>
+        <Package>d0niek\Wykop\Model</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="d0niek\Wykop\Core\DB">
+      <Stats>
+        <TotalClasses>2</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>1</Ce>
+        <A>0.5</A>
+        <I>1</I>
+        <D>0.5</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Core/DB/PdoDB.php">PdoDB</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Core/DB/DBInterface.php">DBInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package></Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="d0niek\Wykop\Core">
+      <Stats>
+        <TotalClasses>10</TotalClasses>
+        <ConcreteClasses>6</ConcreteClasses>
+        <AbstractClasses>4</AbstractClasses>
+        <Ca>1</Ca>
+        <Ce>7</Ce>
+        <A>0.4</A>
+        <I>0.875</I>
+        <D>0.275</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Core/DependenceInjection.php">DependenceInjection</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Core/FrontController.php">FrontController</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Core/Kernel.php">Kernel</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Core/RepositoryManager.php">RepositoryManager</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Core/Router.php">Router</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Core/DependenceInjectionInterface.php">DependenceInjectionInterface</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Core/FrontControllerInterface.php">FrontControllerInterface</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Core/RepositoryManagerInterface.php">RepositoryManagerInterface</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Core/RouterInterface.php">RouterInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>Ds</Package>
+        <Package>d0niek\Wykop\Controller</Package>
+        <Package>d0niek\Wykop\Exception</Package>
+        <Package>d0niek\Wykop\Http</Package>
+        <Package>d0niek\Wykop\Http\Response</Package>
+        <Package>d0niek\Wykop\Model</Package>
+        <Package>d0niek\Wykop\Repository</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>d0niek\Wykop\Controller</Package>
+      </UsedBy>
+    </Package>
+    <Package name="d0niek\Wykop\Exception">
+      <Stats>
+        <TotalClasses>7</TotalClasses>
+        <ConcreteClasses>7</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>3</Ca>
+        <Ce>1</Ce>
+        <A>0</A>
+        <I>0.25</I>
+        <D>0.75</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Exception/DependenceInjectionException.php">DependenceInjectionException</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Exception/FrontControllerException.php">FrontControllerException</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Exception/HtmlResponseException.php">HtmlResponseException</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Exception/ModelNotFoundException.php">ModelNotFoundException</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Exception/RepositoryException.php">RepositoryException</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Exception/RepositoryManagerException.php">RepositoryManagerException</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Exception/RouterException.php">RouterException</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package></Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>d0niek\Wykop\Controller\User</Package>
+        <Package>d0niek\Wykop\Core</Package>
+        <Package>d0niek\Wykop\Http\Response</Package>
+      </UsedBy>
+    </Package>
+    <Package name="d0niek\Wykop\Http">
+      <Stats>
+        <TotalClasses>5</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>3</AbstractClasses>
+        <Ca>5</Ca>
+        <Ce>1</Ce>
+        <A>0.6</A>
+        <I>0.16666666666667</I>
+        <D>0.23333333333333</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Http/Request.php">Request</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Http/RequestInterface.php">RequestInterface</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Http/ResponseInterface.php">ResponseInterface</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Http/SessionInterface.php">SessionInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>Ds</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>d0niek\Wykop\Controller</Package>
+        <Package>d0niek\Wykop\Controller\Post</Package>
+        <Package>d0niek\Wykop\Controller\User</Package>
+        <Package>d0niek\Wykop\Core</Package>
+        <Package>d0niek\Wykop\Http\Response</Package>
+      </UsedBy>
+    </Package>
+    <Package name="d0niek\Wykop\Http\Response">
+      <Stats>
+        <TotalClasses>2</TotalClasses>
+        <ConcreteClasses>2</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>2</Ca>
+        <Ce>3</Ce>
+        <A>0</A>
+        <I>0.6</I>
+        <D>0.4</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Http/Response/HtmlResponse.php">HtmlResponse</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Http/Response/RedirectResponse.php">RedirectResponse</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package>Ds</Package>
+        <Package>d0niek\Wykop\Exception</Package>
+        <Package>d0niek\Wykop\Http</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>d0niek\Wykop\Controller</Package>
+        <Package>d0niek\Wykop\Core</Package>
+      </UsedBy>
+    </Package>
+    <Package name="d0niek\Wykop\Model">
+      <Stats>
+        <TotalClasses>8</TotalClasses>
+        <ConcreteClasses>6</ConcreteClasses>
+        <AbstractClasses>2</AbstractClasses>
+        <Ca>6</Ca>
+        <Ce>2</Ce>
+        <A>0.25</A>
+        <I>0.25</I>
+        <D>0.5</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Model/PostFactory.php">PostFactory</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Model/PostModel.php">PostModel</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Model/Route.php">Route</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Model/RouteFactory.php">RouteFactory</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Model/UserFactory.php">UserFactory</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Model/UserModel.php">UserModel</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Model/Model.php">Model</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Model/ModelFactory.php">ModelFactory</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package></Package>
+        <Package>Ds</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>d0niek\Wykop\Controller</Package>
+        <Package>d0niek\Wykop\Controller\Post</Package>
+        <Package>d0niek\Wykop\Controller\User</Package>
+        <Package>d0niek\Wykop\Core</Package>
+        <Package>d0niek\Wykop\Repository</Package>
+        <Package>d0niek\Wykop\Repository\PDO</Package>
+      </UsedBy>
+    </Package>
+    <Package name="d0niek\Wykop\Repository\PDO">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>3</ConcreteClasses>
+        <AbstractClasses>0</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>4</Ce>
+        <A>0</A>
+        <I>1</I>
+        <D>0</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Repository/PDO/PostRepository.php">PostRepository</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Repository/PDO/UserRepository.php">UserRepository</Class>
+      </ConcreteClasses>
+      <AbstractClasses/>
+      <DependsUpon>
+        <Package></Package>
+        <Package>Ds</Package>
+        <Package>d0niek\Wykop\Model</Package>
+        <Package>d0niek\Wykop\Repository</Package>
+      </DependsUpon>
+      <UsedBy/>
+    </Package>
+    <Package name="d0niek\Wykop\Repository">
+      <Stats>
+        <TotalClasses>3</TotalClasses>
+        <ConcreteClasses>0</ConcreteClasses>
+        <AbstractClasses>3</AbstractClasses>
+        <Ca>2</Ca>
+        <Ce>2</Ce>
+        <A>1</A>
+        <I>0.5</I>
+        <D>0.5</D>
+      </Stats>
+      <ConcreteClasses/>
+      <AbstractClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Repository/PostRepositoryInterface.php">PostRepositoryInterface</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Repository/RepositoryInterface.php">RepositoryInterface</Class>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Repository/UserRepositoryInterface.php">UserRepositoryInterface</Class>
+      </AbstractClasses>
+      <DependsUpon>
+        <Package>Ds</Package>
+        <Package>d0niek\Wykop\Model</Package>
+      </DependsUpon>
+      <UsedBy>
+        <Package>d0niek\Wykop\Core</Package>
+        <Package>d0niek\Wykop\Repository\PDO</Package>
+      </UsedBy>
+    </Package>
+    <Package name="d0niek\Wykop\Service">
+      <Stats>
+        <TotalClasses>2</TotalClasses>
+        <ConcreteClasses>1</ConcreteClasses>
+        <AbstractClasses>1</AbstractClasses>
+        <Ca>0</Ca>
+        <Ce>0</Ce>
+        <A>0.5</A>
+        <I>0</I>
+        <D>0.5</D>
+      </Stats>
+      <ConcreteClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Service/PasswordHash.php">PasswordHash</Class>
+      </ConcreteClasses>
+      <AbstractClasses>
+        <Class sourceFile="/home/d0niek/public_html/wykop/src/Service/PasswordHashInterface.php">PasswordHashInterface</Class>
+      </AbstractClasses>
+      <DependsUpon/>
+      <UsedBy/>
+    </Package>
+  </Packages>
+  <Cycles>
+    <Package Name="d0niek\Wykop\Controller">
+      <Package>d0niek\Wykop\Controller</Package>
+      <Package>d0niek\Wykop\Core</Package>
+      <Package>d0niek\Wykop\Controller</Package>
+    </Package>
+    <Package Name="d0niek\Wykop\Controller\Post">
+      <Package>d0niek\Wykop\Controller\Post</Package>
+      <Package>d0niek\Wykop\Controller</Package>
+      <Package>d0niek\Wykop\Core</Package>
+      <Package>d0niek\Wykop\Controller</Package>
+    </Package>
+    <Package Name="d0niek\Wykop\Controller\User">
+      <Package>d0niek\Wykop\Controller\User</Package>
+      <Package>d0niek\Wykop\Controller</Package>
+      <Package>d0niek\Wykop\Core</Package>
+      <Package>d0niek\Wykop\Controller</Package>
+    </Package>
+    <Package Name="d0niek\Wykop\Core">
+      <Package>d0niek\Wykop\Core</Package>
+      <Package>d0niek\Wykop\Controller</Package>
+      <Package>d0niek\Wykop\Core</Package>
+    </Package>
+  </Cycles>
+</PDepend>

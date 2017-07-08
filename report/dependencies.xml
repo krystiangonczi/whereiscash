@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dependencies generated="2017-03-10T08:51:28" pdepend="2.5.0">
+  <package name="d0niek\Wykop\Controller">
+    <class name="Controller">
+      <efferent>
+        <type namespace="d0niek\Wykop\Core" name="DependenceInjectionInterface"/>
+        <type namespace="d0niek\Wykop\Model" name="Route"/>
+        <type namespace="d0niek\Wykop\Http" name="ResponseInterface"/>
+        <type namespace="Ds" name="Map"/>
+        <type namespace="d0niek\Wykop\Http\Response" name="HtmlResponse"/>
+        <type namespace="d0niek\Wykop\Http\Response" name="RedirectResponse"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Controller\Post" name="Add"/>
+        <type namespace="d0niek\Wykop\Controller\Post" name="Edit"/>
+        <type namespace="d0niek\Wykop\Controller\User" name="Login"/>
+        <type namespace="d0niek\Wykop\Controller\User" name="Logout"/>
+        <type namespace="d0niek\Wykop\Controller\User" name="Register"/>
+        <type namespace="d0niek\Wykop\Core" name="FrontController"/>
+        <type namespace="d0niek\Wykop\Core" name="FrontControllerInterface"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Controller/Controller.php"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Controller\Post">
+    <class name="Add">
+      <efferent>
+        <type namespace="d0niek\Wykop\Controller" name="Controller"/>
+        <type namespace="d0niek\Wykop\Http" name="ResponseInterface"/>
+        <type namespace="d0niek\Wykop\Model" name="UserModel"/>
+        <type namespace="d0niek\Wykop\Controller\Post" name="void"/>
+        <type namespace="Ds" name="Map"/>
+        <type namespace="d0niek\Wykop\Model" name="PostFactory"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Controller/Post/Add.php"/>
+    </class>
+    <class name="Edit">
+      <efferent>
+        <type namespace="d0niek\Wykop\Controller" name="Controller"/>
+        <type namespace="d0niek\Wykop\Http" name="ResponseInterface"/>
+        <type namespace="Ds" name="Map"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Controller/Post/Edit.php"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Controller\User">
+    <class name="Login">
+      <efferent>
+        <type namespace="d0niek\Wykop\Controller" name="Controller"/>
+        <type namespace="d0niek\Wykop\Http" name="ResponseInterface"/>
+        <type namespace="d0niek\Wykop\Exception" name="ModelNotFoundException"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Controller/User/Login.php"/>
+    </class>
+    <class name="Logout">
+      <efferent>
+        <type namespace="d0niek\Wykop\Controller" name="Controller"/>
+        <type namespace="d0niek\Wykop\Http" name="ResponseInterface"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Controller/User/Logout.php"/>
+    </class>
+    <class name="Register">
+      <efferent>
+        <type namespace="d0niek\Wykop\Controller" name="Controller"/>
+        <type namespace="d0niek\Wykop\Http" name="ResponseInterface"/>
+        <type namespace="d0niek\Wykop\Exception" name="ModelNotFoundException"/>
+        <type namespace="d0niek\Wykop\Controller\User" name="void"/>
+        <type namespace="Ds" name="Map"/>
+        <type namespace="d0niek\Wykop\Model" name="UserFactory"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Controller/User/Register.php"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Core\DB">
+    <interface name="DBInterface">
+      <efferent/>
+      <afferent>
+        <type namespace="d0niek\Wykop\Core\DB" name="PdoDB"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Core/DB/DBInterface.php"/>
+    </interface>
+    <class name="PdoDB">
+      <efferent>
+        <type namespace="d0niek\Wykop\Core\DB" name="DBInterface"/>
+        <type namespace="" name="PDO"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Core/DB/PdoDB.php"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Core">
+    <class name="DependenceInjection">
+      <efferent>
+        <type namespace="d0niek\Wykop\Core" name="DependenceInjectionInterface"/>
+        <type namespace="Ds" name="Map"/>
+        <type namespace="d0niek\Wykop\Exception" name="DependenceInjectionException"/>
+        <type namespace="d0niek\Wykop\Core" name="void"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Core/DependenceInjection.php"/>
+    </class>
+    <interface name="DependenceInjectionInterface">
+      <efferent>
+        <type namespace="Ds" name="Map"/>
+        <type namespace="d0niek\Wykop\Core" name="void"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Controller" name="Controller"/>
+        <type namespace="d0niek\Wykop\Core" name="DependenceInjection"/>
+        <type namespace="d0niek\Wykop\Core" name="FrontController"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Core/DependenceInjectionInterface.php"/>
+    </interface>
+    <class name="FrontController">
+      <efferent>
+        <type namespace="d0niek\Wykop\Core" name="FrontControllerInterface"/>
+        <type namespace="d0niek\Wykop\Core" name="DependenceInjectionInterface"/>
+        <type namespace="d0niek\Wykop\Model" name="Route"/>
+        <type namespace="d0niek\Wykop\Controller" name="Controller"/>
+        <type namespace="d0niek\Wykop\Exception" name="FrontControllerException"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Core/FrontController.php"/>
+    </class>
+    <interface name="FrontControllerInterface">
+      <efferent>
+        <type namespace="d0niek\Wykop\Model" name="Route"/>
+        <type namespace="d0niek\Wykop\Controller" name="Controller"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Core" name="FrontController"/>
+        <type namespace="d0niek\Wykop\Core" name="Kernel"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Core/FrontControllerInterface.php"/>
+    </interface>
+    <class name="Kernel">
+      <efferent>
+        <type namespace="d0niek\Wykop\Http" name="RequestInterface"/>
+        <type namespace="d0niek\Wykop\Core" name="RouterInterface"/>
+        <type namespace="d0niek\Wykop\Core" name="FrontControllerInterface"/>
+        <type namespace="d0niek\Wykop\Core" name="void"/>
+        <type namespace="d0niek\Wykop\Http\Response" name="RedirectResponse"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Core/Kernel.php"/>
+    </class>
+    <class name="RepositoryManager">
+      <efferent>
+        <type namespace="d0niek\Wykop\Core" name="RepositoryManagerInterface"/>
+        <type namespace="d0niek\Wykop\Repository" name="RepositoryInterface"/>
+        <type namespace="d0niek\Wykop\Exception" name="RepositoryManagerException"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Core/RepositoryManager.php"/>
+    </class>
+    <interface name="RepositoryManagerInterface">
+      <efferent>
+        <type namespace="d0niek\Wykop\Repository" name="RepositoryInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Core" name="RepositoryManager"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Core/RepositoryManagerInterface.php"/>
+    </interface>
+    <class name="Router">
+      <efferent>
+        <type namespace="d0niek\Wykop\Core" name="RouterInterface"/>
+        <type namespace="Ds" name="Vector"/>
+        <type namespace="d0niek\Wykop\Model" name="RouteFactory"/>
+        <type namespace="d0niek\Wykop\Model" name="Route"/>
+        <type namespace="d0niek\Wykop\Exception" name="RouterException"/>
+        <type namespace="Ds" name="Map"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Core/Router.php"/>
+    </class>
+    <interface name="RouterInterface">
+      <efferent>
+        <type namespace="d0niek\Wykop\Model" name="Route"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Core" name="Kernel"/>
+        <type namespace="d0niek\Wykop\Core" name="Router"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Core/RouterInterface.php"/>
+    </interface>
+  </package>
+  <package name="d0niek\Wykop\Exception">
+    <class name="DependenceInjectionException">
+      <efferent>
+        <type namespace="" name="Exception"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Core" name="DependenceInjection"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Exception/DependenceInjectionException.php"/>
+    </class>
+    <class name="FrontControllerException">
+      <efferent>
+        <type namespace="" name="Exception"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Core" name="FrontController"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Exception/FrontControllerException.php"/>
+    </class>
+    <class name="HtmlResponseException">
+      <efferent>
+        <type namespace="" name="Exception"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Http\Response" name="HtmlResponse"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Exception/HtmlResponseException.php"/>
+    </class>
+    <class name="ModelNotFoundException">
+      <efferent>
+        <type namespace="" name="Exception"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Controller\User" name="Login"/>
+        <type namespace="d0niek\Wykop\Controller\User" name="Register"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Exception/ModelNotFoundException.php"/>
+    </class>
+    <class name="RepositoryException">
+      <efferent>
+        <type namespace="" name="Exception"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Exception/RepositoryException.php"/>
+    </class>
+    <class name="RepositoryManagerException">
+      <efferent>
+        <type namespace="" name="Exception"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Core" name="RepositoryManager"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Exception/RepositoryManagerException.php"/>
+    </class>
+    <class name="RouterException">
+      <efferent>
+        <type namespace="" name="Exception"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Core" name="Router"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Exception/RouterException.php"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Http">
+    <class name="Request">
+      <efferent>
+        <type namespace="d0niek\Wykop\Http" name="RequestInterface"/>
+        <type namespace="Ds" name="Map"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Http/Request.php"/>
+    </class>
+    <interface name="RequestInterface">
+      <efferent/>
+      <afferent>
+        <type namespace="d0niek\Wykop\Core" name="Kernel"/>
+        <type namespace="d0niek\Wykop\Http" name="Request"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Http/RequestInterface.php"/>
+    </interface>
+    <interface name="ResponseInterface">
+      <efferent/>
+      <afferent>
+        <type namespace="d0niek\Wykop\Controller" name="Controller"/>
+        <type namespace="d0niek\Wykop\Controller\Post" name="Add"/>
+        <type namespace="d0niek\Wykop\Controller\Post" name="Edit"/>
+        <type namespace="d0niek\Wykop\Controller\User" name="Login"/>
+        <type namespace="d0niek\Wykop\Controller\User" name="Logout"/>
+        <type namespace="d0niek\Wykop\Controller\User" name="Register"/>
+        <type namespace="d0niek\Wykop\Http\Response" name="HtmlResponse"/>
+        <type namespace="d0niek\Wykop\Http\Response" name="RedirectResponse"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Http/ResponseInterface.php"/>
+    </interface>
+    <interface name="SessionInterface">
+      <efferent>
+        <type namespace="d0niek\Wykop\Http" name="void"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Http\Response" name="HtmlResponse"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Http/SessionInterface.php"/>
+    </interface>
+  </package>
+  <package name="d0niek\Wykop\Http\Response">
+    <class name="HtmlResponse">
+      <efferent>
+        <type namespace="d0niek\Wykop\Http" name="ResponseInterface"/>
+        <type namespace="Ds" name="Map"/>
+        <type namespace="d0niek\Wykop\Http" name="SessionInterface"/>
+        <type namespace="d0niek\Wykop\Exception" name="HtmlResponseException"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Controller" name="Controller"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Http/Response/HtmlResponse.php"/>
+    </class>
+    <class name="RedirectResponse">
+      <efferent>
+        <type namespace="d0niek\Wykop\Http" name="ResponseInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Controller" name="Controller"/>
+        <type namespace="d0niek\Wykop\Core" name="Kernel"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Http/Response/RedirectResponse.php"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Model">
+    <class name="Model">
+      <efferent/>
+      <afferent>
+        <type namespace="d0niek\Wykop\Model" name="ModelFactory"/>
+        <type namespace="d0niek\Wykop\Model" name="PostFactory"/>
+        <type namespace="d0niek\Wykop\Model" name="PostModel"/>
+        <type namespace="d0niek\Wykop\Model" name="Route"/>
+        <type namespace="d0niek\Wykop\Model" name="RouteFactory"/>
+        <type namespace="d0niek\Wykop\Model" name="UserFactory"/>
+        <type namespace="d0niek\Wykop\Model" name="UserModel"/>
+        <type namespace="d0niek\Wykop\Repository\PDO" name="PostRepository"/>
+        <type namespace="d0niek\Wykop\Repository\PDO" name="UserRepository"/>
+        <type namespace="d0niek\Wykop\Repository" name="RepositoryInterface"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Model/Model.php"/>
+    </class>
+    <class name="ModelFactory">
+      <efferent>
+        <type namespace="Ds" name="Map"/>
+        <type namespace="d0niek\Wykop\Model" name="Model"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Model" name="PostFactory"/>
+        <type namespace="d0niek\Wykop\Model" name="RouteFactory"/>
+        <type namespace="d0niek\Wykop\Model" name="UserFactory"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Model/ModelFactory.php"/>
+    </class>
+    <class name="PostFactory">
+      <efferent>
+        <type namespace="d0niek\Wykop\Model" name="ModelFactory"/>
+        <type namespace="Ds" name="Map"/>
+        <type namespace="d0niek\Wykop\Model" name="Model"/>
+        <type namespace="" name="DateTime"/>
+        <type namespace="d0niek\Wykop\Model" name="PostModel"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Controller\Post" name="Add"/>
+        <type namespace="d0niek\Wykop\Repository\PDO" name="PostRepository"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Model/PostFactory.php"/>
+    </class>
+    <class name="PostModel">
+      <efferent>
+        <type namespace="d0niek\Wykop\Model" name="Model"/>
+        <type namespace="" name="DateTime"/>
+        <type namespace="d0niek\Wykop\Model" name="UserModel"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Model" name="PostFactory"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Model/PostModel.php"/>
+    </class>
+    <class name="Route">
+      <efferent>
+        <type namespace="d0niek\Wykop\Model" name="Model"/>
+        <type namespace="Ds" name="Map"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Controller" name="Controller"/>
+        <type namespace="d0niek\Wykop\Core" name="FrontController"/>
+        <type namespace="d0niek\Wykop\Core" name="FrontControllerInterface"/>
+        <type namespace="d0niek\Wykop\Core" name="Router"/>
+        <type namespace="d0niek\Wykop\Core" name="RouterInterface"/>
+        <type namespace="d0niek\Wykop\Model" name="RouteFactory"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Model/Route.php"/>
+    </class>
+    <class name="RouteFactory">
+      <efferent>
+        <type namespace="d0niek\Wykop\Model" name="ModelFactory"/>
+        <type namespace="Ds" name="Map"/>
+        <type namespace="d0niek\Wykop\Model" name="Model"/>
+        <type namespace="d0niek\Wykop\Model" name="Route"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Core" name="Router"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Model/RouteFactory.php"/>
+    </class>
+    <class name="UserFactory">
+      <efferent>
+        <type namespace="d0niek\Wykop\Model" name="ModelFactory"/>
+        <type namespace="Ds" name="Map"/>
+        <type namespace="d0niek\Wykop\Model" name="Model"/>
+        <type namespace="d0niek\Wykop\Model" name="UserModel"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Controller\User" name="Register"/>
+        <type namespace="d0niek\Wykop\Repository\PDO" name="UserRepository"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Model/UserFactory.php"/>
+    </class>
+    <class name="UserModel">
+      <efferent>
+        <type namespace="d0niek\Wykop\Model" name="Model"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Controller\Post" name="Add"/>
+        <type namespace="d0niek\Wykop\Model" name="PostModel"/>
+        <type namespace="d0niek\Wykop\Model" name="UserFactory"/>
+        <type namespace="d0niek\Wykop\Repository\PDO" name="PostRepository"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Model/UserModel.php"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Repository\PDO">
+    <class name="PostRepository">
+      <efferent>
+        <type namespace="d0niek\Wykop\Repository" name="PostRepositoryInterface"/>
+        <type namespace="d0niek\Wykop\Repository\PDO" name="Repository"/>
+        <type namespace="d0niek\Wykop\Model" name="Model"/>
+        <type namespace="" name="PDO"/>
+        <type namespace="Ds" name="Map"/>
+        <type namespace="d0niek\Wykop\Model" name="PostFactory"/>
+        <type namespace="d0niek\Wykop\Model" name="UserModel"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Repository/PDO/PostRepository.php"/>
+    </class>
+    <class name="UserRepository">
+      <efferent>
+        <type namespace="d0niek\Wykop\Repository" name="UserRepositoryInterface"/>
+        <type namespace="d0niek\Wykop\Repository\PDO" name="Repository"/>
+        <type namespace="d0niek\Wykop\Model" name="Model"/>
+        <type namespace="Ds" name="Map"/>
+        <type namespace="d0niek\Wykop\Model" name="UserFactory"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Repository/PDO/UserRepository.php"/>
+    </class>
+  </package>
+  <package name="d0niek\Wykop\Repository">
+    <interface name="PostRepositoryInterface">
+      <efferent>
+        <type namespace="d0niek\Wykop\Repository" name="RepositoryInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Repository\PDO" name="PostRepository"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Repository/PostRepositoryInterface.php"/>
+    </interface>
+    <interface name="RepositoryInterface">
+      <efferent>
+        <type namespace="d0niek\Wykop\Model" name="Model"/>
+        <type namespace="Ds" name="Vector"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Core" name="RepositoryManager"/>
+        <type namespace="d0niek\Wykop\Core" name="RepositoryManagerInterface"/>
+        <type namespace="d0niek\Wykop\Repository" name="PostRepositoryInterface"/>
+        <type namespace="d0niek\Wykop\Repository" name="UserRepositoryInterface"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Repository/RepositoryInterface.php"/>
+    </interface>
+    <interface name="UserRepositoryInterface">
+      <efferent>
+        <type namespace="d0niek\Wykop\Repository" name="RepositoryInterface"/>
+      </efferent>
+      <afferent>
+        <type namespace="d0niek\Wykop\Repository\PDO" name="UserRepository"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Repository/UserRepositoryInterface.php"/>
+    </interface>
+  </package>
+  <package name="d0niek\Wykop\Service">
+    <class name="PasswordHash">
+      <efferent>
+        <type namespace="d0niek\Wykop\Service" name="PasswordHashInterface"/>
+      </efferent>
+      <afferent/>
+      <file name="/home/d0niek/public_html/wykop/src/Service/PasswordHash.php"/>
+    </class>
+    <interface name="PasswordHashInterface">
+      <efferent/>
+      <afferent>
+        <type namespace="d0niek\Wykop\Service" name="PasswordHash"/>
+      </afferent>
+      <file name="/home/d0niek/public_html/wykop/src/Service/PasswordHashInterface.php"/>
+    </interface>
+  </package>
+</dependencies>

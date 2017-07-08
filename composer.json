@@ -1,0 +1,21 @@
+{
+    "name": "d0niek/whereiscash",
+    "description": "Where is cash",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Damian Glinkowski",
+            "email": "damianglinkowski@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "php-ds/php-ds": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "d0niek\\Whereiscash\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>Hello World</title>
+</head>
+<body>
+
+<?php if ($user !== null) : ?>
+    <p>Hello <?= $user->getLogin() ?> | <a href="/logout">Logout</a></p>
+<?php endif; ?>
+
+<?php include_once $template; ?>
+
+</body>
+</html>
