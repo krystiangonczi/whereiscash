@@ -8,8 +8,12 @@ docker run \
     -e MYSQL_USER=wykop_user \
     -e MYSQL_PASSWORD=wykop_password \
     -p 33060:3306 \
+    -v "$(pwd)":/app \
     -d \
     mariadb:10.1.17
+
+# docker exec -it wykop_db bash
+# mysql -u wykop_user -pwykop_password wykop_db < /app/schema.sql
 
 cd web/
 php -S localhost:8000
