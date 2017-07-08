@@ -1,1 +1,13 @@
 <h2>Edit post <?= $postId ?></h2>
+
+<button id='asd'>asd</button>
+
+<script>
+ $('#asd').click(function () {
+   $.ajax({
+     url: "base.phtml"
+   }).done(function() {
+     return("fajnie");
+   })
+ })
+</script>
