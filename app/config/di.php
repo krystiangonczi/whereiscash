@@ -1,24 +1,24 @@
 <?php
 
-use d0niek\Wykop\Core\DB\PdoDB;
-use d0niek\Wykop\Core\DependenceInjection;
-use d0niek\Wykop\Core\FrontController;
-use d0niek\Wykop\Core\Kernel;
-use d0niek\Wykop\Core\RepositoryManager;
-use d0niek\Wykop\Http\Request;
-use d0niek\Wykop\Core\Router;
-use d0niek\Wykop\Http\Session;
-use d0niek\Wykop\Model\RouteFactory;
-use d0niek\Wykop\Service\PasswordHash;
+use d0niek\Whereiscash\Core\DB\PdoDB;
+use d0niek\Whereiscash\Core\DependenceInjection;
+use d0niek\Whereiscash\Core\FrontController;
+use d0niek\Whereiscash\Core\Kernel;
+use d0niek\Whereiscash\Core\RepositoryManager;
+use d0niek\Whereiscash\Http\Request;
+use d0niek\Whereiscash\Core\Router;
+use d0niek\Whereiscash\Http\Session;
+use d0niek\Whereiscash\Model\RouteFactory;
+use d0niek\Whereiscash\Service\PasswordHash;
 
 $rootPath = dirname(dirname(__DIR__));
 $di = DependenceInjection::getInstance();
 
 $di->putParam('root_path', $rootPath);
 $di->putParam('routes', require_once $rootPath . '/app/config/routes.php');
-$di->putParam('controllers_namespace', 'd0niek\\Wykop\\Controller');
-$di->putParam('repository_namespace', 'd0niek\\Wykop\\Repository');
-$di->putParam('model_namespace', 'd0niek\\Wykop\\Model');
+$di->putParam('controllers_namespace', 'd0niek\\Whereiscash\\Controller');
+$di->putParam('repository_namespace', 'd0niek\\Whereiscash\\Repository');
+$di->putParam('model_namespace', 'd0niek\\Whereiscash\\Model');
 $di->putParam('view_path', $di->getParam('root_path') . '/app/view');
 $di->putParam('hash_salt', 'baeec2b495c9922a1f928c15c1712ff228a7f6a8');
 $di->putParam('hash_cost', 12);

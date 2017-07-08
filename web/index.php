@@ -1,6 +1,6 @@
 <?php
 
-use d0niek\Wykop\Http\Response\HtmlResponse;
+use d0niek\Whereiscash\Http\Response\HtmlResponse;
 use Ds\Map;
 
 require_once '../vendor/autoload.php';

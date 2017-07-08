@@ -6,7 +6,6 @@ services:
         image: nginx:1.13
         volumes:
             - ./app/config/nginx/conf.d:/etc/nginx/conf.d
-            - ./app/config/php:/usr/local/etc/php
             - ./app/config/php-fpm.d:/usr/local/etc/php-fpm.d
             - php-socket:/var/share/php-socket
             - .:/app
@@ -27,6 +26,7 @@ services:
             - db
         volumes_from:
             - storage
+        command: /app/php-command.sh
     db:
         image: mariadb:10.1.17
         environment:
