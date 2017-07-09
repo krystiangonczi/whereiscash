@@ -26,8 +26,12 @@ return new Vector(
             'controller' => 'Transaction:Add',
         ]),
         new Map([
-            'url' => '/post/edit/{id}',
-            'controller' => 'Post:Edit',
+            'url' => '/history',
+            'controller' => 'Transaction:History',
+        ]),
+        new Map([
+            'url' => '/target',
+            'controller' => 'User:Target',
         ]),
     ]
 );

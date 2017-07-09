@@ -1,14 +1,22 @@
 <?php
 include('partials/header.phtml');
 ?>
+
+<?php if ($this->session->has('error')) : ?>
+<div class="error-message">
+    <p><?= $this->session->get('error') ?></p>
+    <?php $this->session->remove('error') ?>
+</div>
+<?php endif; ?>
+
 <div id="target">
-    <form action="">
+    <form action="/target" method="post">
         <h3>Wpisz sumę, którą chcesz zaoszczędzić</h3>
         <input type="number" name="amount" placeholder="Kwota">
         <label for="amount">PLN</label>
 <!--        TODO datepicker start end inputs-->
-        <input type="hidden" name="start">
-        <input type="hidden" name="end">
+        <input type="hidden" name="start" value="2017-07-23">
+        <input type="hidden" name="end" value="2017-08-23">
         <button type="submit">Zapisz</button>
     </form>
 </div>

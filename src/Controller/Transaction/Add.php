@@ -33,7 +33,7 @@ class Add extends Controller
             $title = trim($this->request->post('title'));
             if ($this->isValid($cashFlow, (float) $amount, (int) $category, $title)) {
                 $this->addTransaction($cashFlow, (float) $amount, (int) $category, $title, $user);
-                return $this->redirect('/dashboard');
+                return $this->redirect('/history');
             }
         }
 

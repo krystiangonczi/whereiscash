@@ -5,7 +5,13 @@
 <body>
 
 <?php if ($user !== null) : ?>
-    <p>Hello <?= $user->getEmail() ?> | <a href="/logout">Logout</a></p>
+    <p>
+        Hello <?= $user->getEmail() ?> | <a href="/">Home</a> | <a href="/dashboard">Dashboard</a> | <a href="/history">History</a> | <a href="/target">Target</a> | <a href="/logout">Logout</a>
+    </p>
+<?php else : ?>
+    <p>
+        Hello | <a href="/register">Register</a>
+    </p>
 <?php endif; ?>
 
 <?php include_once $template; ?>
