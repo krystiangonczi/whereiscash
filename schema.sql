@@ -4,6 +4,7 @@ CREATE TABLE IF NOT EXISTS users (
     user_id int UNSIGNED NOT NULL AUTO_INCREMENT,
     email VARCHAR(250) NOT NULL UNIQUE,
     password VARCHAR(60) NOT NULL,
+    budget FLOAT (10,4) NOT NULL DEFAULT 0,
     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY(user_id)
 ) ENGINE = InnoDB;
@@ -20,7 +21,7 @@ CREATE TABLE IF NOT EXISTS targets (
     amount FLOAT (10,4) NOT NULL,
     start_date DATETIME NOT NULL,
     end_date DATETIME NOT NULL,
-    finished BIT NOT NULL DEFAULT 0,
+    finished TINYINT NOT NULL DEFAULT 0,
     PRIMARY KEY(target_id),
     CONSTRAINT `targets_user` FOREIGN KEY (user_id) REFERENCES users (user_id)
         ON DELETE CASCADE
@@ -33,7 +34,7 @@ CREATE TABLE IF NOT EXISTS transactions (
     category_id int UNSIGNED NOT NULL,
     title VARCHAR(60) NOT NULL DEFAULT '',
     amount FLOAT (10,4) NOT NULL,
-    cash_flow BIT NOT NULL DEFAULT 0,
+    cash_flow TINYINT NOT NULL DEFAULT 0,
     created_at DATETIME NOT NULL,
     PRIMARY KEY(transaction_id),
     CONSTRAINT `transactions_user` FOREIGN KEY (user_id) REFERENCES users (user_id)
@@ -43,3 +44,10 @@ CREATE TABLE IF NOT EXISTS transactions (
         ON DELETE CASCADE
         ON UPDATE CASCADE
 ) ENGINE = InnoDB;
+
+DELETE FROM categories;
+INSERT INTO categories (name) VALUES
+('Jedzenie'),
+('Transport'),
+('Rachunki'),
+('Rozrywka');

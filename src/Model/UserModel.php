@@ -10,22 +10,29 @@ class UserModel extends Model
     /**
      * @var string
      */
-    private $login;
+    private $email;
+
     /**
      * @var string
      */
     private $password;
 
     /**
+     * @var float
+     */
+    private $budget;
+
+    /**
      * UserModel constructor.
      *
-     * @param string $login
+     * @param string $email
      * @param string $password
      */
-    public function __construct(string $login, string $password)
+    public function __construct(string $email, string $password)
     {
-        $this->login = $login;
+        $this->email = $email;
         $this->password = $password;
+        $this->budget = 0;
         parent::__construct(0);
     }
 
@@ -50,17 +57,17 @@ class UserModel extends Model
     /**
      * @return string
      */
-    public function getLogin(): string
+    public function getEmail(): string
     {
-        return $this->login;
+        return $this->email;
     }
 
     /**
-     * @param string $login
+     * @param string $email
      */
-    public function setLogin(string $login)
+    public function setEmail(string $email)
     {
-        $this->login = $login;
+        $this->email = $email;
     }
 
     /**
@@ -77,6 +84,22 @@ class UserModel extends Model
     public function setPassword(string $password)
     {
         $this->password = $password;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBudget(): float
+    {
+        return $this->budget;
+    }
+
+    /**
+     * @param float $budget
+     */
+    public function setBudget(float $budget): void
+    {
+        $this->budget = $budget;
     }
 
     //endregion Getters & Setters

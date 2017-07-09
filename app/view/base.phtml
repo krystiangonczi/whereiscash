@@ -5,7 +5,7 @@
 <body>
 
 <?php if ($user !== null) : ?>
-    <p>Hello <?= $user->getLogin() ?> | <a href="/logout">Logout</a></p>
+    <p>Hello <?= $user->getEmail() ?> | <a href="/logout">Logout</a></p>
 <?php endif; ?>
 
 <?php include_once $template; ?>

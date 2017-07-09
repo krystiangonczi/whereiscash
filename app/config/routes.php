@@ -22,8 +22,8 @@ return new Vector(
             'controller' => 'User:Register',
         ]),
         new Map([
-            'url' => '/post/add',
-            'controller' => 'Post:Add',
+            'url' => '/add-transaction',
+            'controller' => 'Transaction:Add',
         ]),
         new Map([
             'url' => '/post/edit/{id}',

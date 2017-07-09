@@ -18,7 +18,8 @@ class UserRepository extends Repository implements UserRepositoryInterface
     protected $fields = [
         'user_id',
         'email',
-        'password'
+        'password',
+        'budget'
     ];
     protected $insertFields = [
         'email',
@@ -29,7 +30,15 @@ class UserRepository extends Repository implements UserRepositoryInterface
     {
         /** @var \d0niek\Whereiscash\Model\UserModel $user */
         $user = $model;
-        $user = $this->saveData([$user->getLogin(), $user->getPassword()]);
+        if ($user->getId() === 0) {
+            $user = $this->saveData([$user->getEmail(), $user->getPassword()]);
+        } else {
+            $this->updateData($user->getId(), [
+                'email' => $user->getEmail(),
+                'password' => $user->getPassword(),
+                'budget' => $user->getBudget()
+            ]);
+        }
 
         return $user;
     }
@@ -41,6 +50,7 @@ class UserRepository extends Repository implements UserRepositoryInterface
         /** @var \d0niek\Whereiscash\Model\UserModel $user */
         $user = $userFactory->create($data);
         $user->setId($dbData['user_id']);
+        $user->setBudget($dbData['budget']);
 
         return $user;
     }

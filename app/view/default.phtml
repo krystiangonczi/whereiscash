@@ -18,4 +18,33 @@ Hello world
         </div>
     </form>
     <p><a href="/register">Register</a></p>
+<?php else : ?>
+    <?php if ($this->session->has('error')) : ?>
+    <div class="error-message">
+        <p><?= $this->session->get('error') ?></p>
+        <?php $this->session->remove('error') ?>
+    </div>
+    <?php endif; ?>
+
+    <div id="add_transaction">
+        <div class="add_transaction__tabs">
+            <!-- <span>Wydatki</span><span>Wpływy</span> -->
+        </div>
+        <form action="/add-transaction" method="post">
+            <input type="radio" name="cash_flow" value="payout" checked>Wypłata |
+            <input type="radio" name="cash_flow" value="payin"> Wpłata
+            <input type="number" name="amount" placeholder="Kwota">
+            <label for="amount">PLN</label>
+            <select class="add_transaction__category" name="category">
+            <?php foreach ($categories as $category) : ?>
+                <option value="<?= $category->getId(); ?>">
+                    <?= $category->getName(); ?>
+                </option>
+            <?php endforeach; ?>
+            </select>
+            <input type="text" name="title" placeholder="Tytuł (opcjonalne)">
+            <!-- <input type="hidden" name="cash_flow"> -->
+            <button type="submit">Dodaj</button>
+        </form>
+    </div>
 <?php endif; ?>

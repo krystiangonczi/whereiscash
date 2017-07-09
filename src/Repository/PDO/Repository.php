@@ -114,6 +114,27 @@ abstract class Repository
     }
 
     /**
+     * @param array $data
+     *
+     * @return \d0niek\Whereiscash\Model\Model
+     */
+    protected function updateData($id, array $data): Model
+    {
+        $sql = 'UPDATE ' . $this->table . ' SET ';
+        foreach ($data as $field => $value) {
+            $sql .= ($field . ' = \'' . $value . '\' ,');
+        }
+        $sql = substr($sql, 0, -1);
+        $sql .= 'WHERE ' . $this->idField . ' = ' . $id;
+        $this->executeQuery($sql, $data);
+
+        $modelId = (int)$this->getLastInsertId();
+        $model = $this->find($modelId);
+
+        return $model;
+    }
+
+    /**
      * @inheritDoc
      */
     public function remove(Model $model): Model
