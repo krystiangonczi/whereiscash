@@ -17,11 +17,11 @@ class UserRepository extends Repository implements UserRepositoryInterface
     protected $idField = 'user_id';
     protected $fields = [
         'user_id',
-        'login',
+        'email',
         'password'
     ];
     protected $insertFields = [
-        'login',
+        'email',
         'password'
     ];
 

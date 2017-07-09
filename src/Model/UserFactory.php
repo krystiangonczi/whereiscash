@@ -11,10 +11,10 @@ class UserFactory extends ModelFactory
 {
     public function create(Map $data): Model
     {
-        $login = $data->get('login');
+        $email = $data->get('email');
         $password = $data->get('password');
 
-        $user = new UserModel($login, $password);
+        $user = new UserModel($email, $password);
 
         return $user;
     }

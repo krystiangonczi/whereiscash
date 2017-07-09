@@ -23,11 +23,11 @@ class Register extends Controller
         }
 
         if ($this->request->isPost()) {
-            $login = $this->request->post('login');
+            $email = $this->request->post('email');
             $password = $this->request->post('password');
             $repeatPassword = $this->request->post('repeat_password');
-            if ($this->isValid($login, $password, $repeatPassword)) {
-                $this->registerAndLogin($login, $password);
+            if ($this->isValid($email, $password, $repeatPassword)) {
+                $this->registerAndLogin($email, $password);
                 return $this->redirect('/');
             }
         }
@@ -36,30 +36,30 @@ class Register extends Controller
     }
 
     /**
-     * @param string $login
+     * @param string $email
      * @param string $password
      * @param string $repeatPassword
      *
      * @return bool
      */
-    private function isValid(string $login, string $password, string $repeatPassword): bool
+    private function isValid(string $email, string $password, string $repeatPassword): bool
     {
-        $isFieldEmpty = $login === '' || $password === '' || $repeatPassword === '';
+        $isFieldEmpty = $email === '' || $password === '' || $repeatPassword === '';
         if ($isFieldEmpty === true) {
             $this->session->put('error', 'Fill in all fields');
             return false;
         }
 
-        if (strlen($login) > 30) {
-            $this->session->put('error', 'Login is to long. Max 30 characters');
+        if (strlen($email) > 250) {
+            $this->session->put('error', 'Email is to long. Max 250 characters');
             return false;
         }
 
         try {
             /** @var \d0niek\Whereiscash\Repository\UserRepositoryInterface $userRepository */
             $userRepository = $this->get('repository_manager')->getRepository('PDO:User');
-            $userRepository->findOneBy('login', $login);
-            $this->session->put('error', 'Login is in use.');
+            $userRepository->findOneBy('email', $email);
+            $this->session->put('error', 'Email is in use.');
         } catch (ModelNotFoundException $e) {
             if ($password === $repeatPassword) {
                 return true;
@@ -72,14 +72,14 @@ class Register extends Controller
     }
 
     /**
-     * @param string $login
+     * @param string $email
      * @param string $password
      */
-    private function registerAndLogin(string $login, string $password): void
+    private function registerAndLogin(string $email, string $password): void
     {
         $passwordHash = $this->get('password_hash')->hash($password);
         $data = new Map([
-            'login' => $login,
+            'email' => $email,
             'password' => $passwordHash,
         ]);
         $userFactory = new UserFactory();

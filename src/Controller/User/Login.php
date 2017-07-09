@@ -18,10 +18,10 @@ class Login extends Controller
         }
 
         if ($this->request->isPost()) {
-            $login = $this->request->post('login');
+            $email = $this->request->post('email');
             $password = $this->request->post('password');
-            if ($this->isValid($login, $password)) {
-                $loginResponse = $this->login($login, $password);
+            if ($this->isValid($email, $password)) {
+                $loginResponse = $this->login($email, $password);
                 return $loginResponse;
             }
         }
@@ -30,14 +30,14 @@ class Login extends Controller
     }
 
     /**
-     * @param string $login
+     * @param string $email
      * @param string $password
      *
      * @return bool
      */
-    private function isValid(string $login, string $password): bool
+    private function isValid(string $email, string $password): bool
     {
-        $isFieldEmpty = $login === '' || $password === '';
+        $isFieldEmpty = $email === '' || $password === '';
         if ($isFieldEmpty === true) {
             $this->session->put('error', 'Fill in all fields');
             return false;
@@ -46,7 +46,7 @@ class Login extends Controller
         try {
             /** @var \d0niek\Whereiscash\Repository\UserRepositoryInterface $userRepository */
             $userRepository = $this->get('repository_manager')->getRepository('PDO:User');
-            $userRepository->findOneBy('login', $login);
+            $userRepository->findOneBy('email', $email);
         } catch (ModelNotFoundException $e) {
             $this->session->put('error', 'Login or password is invalid');
 
@@ -57,17 +57,17 @@ class Login extends Controller
     }
 
     /**
-     * @param string $login
+     * @param string $email
      * @param string $password
      *
      * @return \d0niek\Whereiscash\Http\ResponseInterface
      */
-    private function login(string $login, string $password): ResponseInterface
+    private function login(string $email, string $password): ResponseInterface
     {
         /** @var \d0niek\Whereiscash\Repository\UserRepositoryInterface $userRepository */
         $userRepository = $this->get('repository_manager')->getRepository('PDO:User');
         /** @var \d0niek\Whereiscash\Model\UserModel $user */
-        $user = $userRepository->findOneBy('login', $login);
+        $user = $userRepository->findOneBy('email', $email);
 
         $passwordHash = $this->get('password_hash')->hash($password);
         if ($this->isPasswordMatch($passwordHash, $user->getPassword())) {
